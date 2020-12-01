@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "dayOne": "node -e 'require(\"./dayOne\").dayOne()'"
+    }
+}
