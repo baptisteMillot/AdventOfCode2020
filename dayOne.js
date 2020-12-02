@@ -6,9 +6,10 @@ module.exports.dayOne = () => {
         const yearList = data.split("\n").map(year => parseInt(year));
         
         for (let year of yearList){
-            const correspondingYear = yearList.filter(y => y !== year && y + year == YEAR_TO_FOUND);
+            const correspondingYear = yearList
+            .flatMap(y => yearList.filter(ye => ye + y + year == YEAR_TO_FOUND));
             if (correspondingYear.length) {
-                console.log(correspondingYear[0] * year)
+                console.log(correspondingYear[0] * correspondingYear[1] * year)
                 break;
             }
         }
