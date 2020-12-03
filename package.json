@@ -1,6 +1,7 @@
 {
     "scripts": {
         "dayOne": "node -e 'require(\"./dayOne\").dayOne()'",
-        "dayTwo": "node -e 'require(\"./dayTwo\").dayTwo()'"
+        "dayTwo": "node -e 'require(\"./dayTwo\").dayTwo()'",
+        "dayThree": "node -e 'require(\"./dayThree\").dayThree()'"
     }
 }
