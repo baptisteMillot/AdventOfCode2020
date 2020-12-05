@@ -3,6 +3,7 @@
         "dayOne": "node -e 'require(\"./dayOne\").dayOne()'",
         "dayTwo": "node -e 'require(\"./dayTwo\").dayTwo()'",
         "dayThree": "node -e 'require(\"./dayThree\").dayThree()'",
-        "dayFour": "node -e 'require(\"./dayFour\").dayFour()'"
+        "dayFour": "node -e 'require(\"./dayFour\").dayFour()'",
+        "dayFive": "node -e 'require(\"./dayFive\").dayFive()'"
     }
 }
