@@ -5,15 +5,10 @@ module.exports.dayFive = () => {
         const planeMap = data
             .split("\r\n")
             .filter(p => p)
-            .map(p => ({row: p.split(""), result: {minRow: 0, maxRow: 127, minCol: 0, maxCol: 7, valueRow: 128, valueCol: 8}}))
-            .map(p => p.row.reduce((acc, currentValue) => {
-                let newValue = acc;
-                if (acc === "F" || acc === "B") {
-                    newValue = getRowAndColumn(acc, p.result);
-                }
-                newValue = getRowAndColumn(currentValue, newValue);
-                return newValue;
-            })
+            .map(p => (p.split("")))
+            .map(p => p.reduce((acc, currentValue) => {
+                return getRowAndColumn(currentValue, acc);
+            }, {minRow: 0, maxRow: 127, minCol: 0, maxCol: 7, valueRow: 128, valueCol: 8})
         );
 
         const seatIdList = planeMap.map(p => {
