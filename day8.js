@@ -1,7 +1,5 @@
 var fs = require('fs');
 
-const BAG_TO_FIND = "shiny gold";
-
 module.exports.day8 = () => {
     fs.readFile('./inputs/day8.txt', "utf8", (err, data) => {
         const instructionList = data

@@ -7,7 +7,8 @@
         "dayFive": "node -e 'require(\"./dayFive\").dayFive()'",
         "daySix": "node -e 'require(\"./daySix\").daySix()'",
         "daySeven": "node -e 'require(\"./daySeven\").daySeven()'",
-        "day8": "node -e 'require(\"./day8\").day8()'"
+        "day8": "node -e 'require(\"./day8\").day8()'",
+        "day9": "node -e 'require(\"./day9\").day9()'"
     },
     "dependencies": {}
 }
